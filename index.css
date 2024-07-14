@@ -10,10 +10,14 @@
     color: rgb(19, 19, 19);
 }
 
+.nav-title {
+    margin-left: 100px;
+}
+
 .header {
     background-color: rgba(255, 144, 14, 0.1);
     width: 100%;
-    height: 1100px;
+    min-height: 1250px;
 }
 
 .display-flex {
@@ -22,8 +26,9 @@
 }
 
 .navlinks {
-    margin-right: 50px;
+    margin-right: 100px;
     align-items: center;
+
 }
 
 .login {
@@ -54,7 +59,7 @@
 }
 
 .primary-btn {
-    border-radius: 2px;
+    border-radius: 5px;
     background: rgb(255, 144, 14);
     width: 160px;
     height: 44px;
@@ -66,23 +71,78 @@
 }
 
 .banner-contant {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
 }
 
 .banner-img {
     width: 100%;
-    width: 1140px;
-    height: 600px;
-    width: 1440px;
-    left: 240px;
-    right: 240px;
+    min-height: 720px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
+.images4-prents {
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.image4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+
+}
+
+.images {
+    width: 342px;
+    height: 342px;
+    border: white solid;
+    border-radius: 20px;
+}
+
+.images-textdivmain {
+    margin-left: 50px;
+
+}
+
+.image-title {
+    font-size: 35px;
+    font-weight: 700px;
+    color: rgb(19, 19, 19);
+}
+
+.title-color-1 {
+    color: rgb(114, 114, 114);
+
+}
+
+.title-color-2 {
+    color: rgb(255, 144, 14);
+
+}
+
+.image-descripation {
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400px;
+
 }
 
 @media screen and (max-width:576px) {
 
     .navlinks,
-    .display-flex {
+    .display-flex,
+    .images4-prents {
         flex-direction: column;
+    }
+    .image4{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
